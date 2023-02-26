@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery tab2</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>tab2</h1>
+      <section>
+        <ul class="tab">
+          <li><a href="#x">tab1</a></li>
+          <li><a href="#x">tab2</a></li>
+          <li><a href="#x">tab3</a></li>
+        </ul>
+
+        <div class="contents">
+          가득 지나가는 하늘에는 별 라이너 어머니 봅니다. 다 덮어 이런 때 시인의
+          이국 있습니다. 내 별 가난한 듯합니다. 무엇인지 너무나 별 어머님, 덮어
+          가난한 까닭입니다. 이제 이름을 청춘이 위에도 남은 아직 까닭입니다.
+          흙으로 노새, 묻힌 오면 봅니다. 하나에 릴케 너무나 버리었습니다. 노루,
+          이웃 가을로 봅니다. 별 별에도 어머니, 계집애들의 그러나 있습니다. 내
+          무성할 내일 말 이 자랑처럼 계십니다.
+        </div>
+        <div class="contents">
+          아직 별 별을 가슴속에 내 무엇인지 나의 너무나 가난한 봅니다. 새겨지는
+          프랑시스 어머니, 쓸쓸함과 그러나 별 위에 아침이 있습니다. 밤을 없이
+          벌레는 비둘기, 아무 속의 소학교 계십니다. 별 우는 시와 아직 북간도에
+          너무나 멀리 헤일 멀리 듯합니다. 별빛이 시인의 이국 무성할 말 내 별
+          아직 계십니다. 이름을 강아지, 북간도에 까닭이요, 헤일 이국 계십니다.
+          한 비둘기, 잠, 걱정도 지나가는 별 새겨지는 봄이 거외다. 이런 파란 밤이
+          못 봅니다. 별에도 별을 별 토끼, 풀이 시와 쓸쓸함과 별 있습니다. 나의
+          까닭이요, 우는 아름다운 봅니다. 하나 쉬이 내린 별 가슴속에 봅니다.
+        </div>
+        <div class="contents">
+          지나고 나는 노새, 오는 쓸쓸함과 슬퍼하는 별 이네들은 자랑처럼
+          있습니다. 별들을 강아지, 별 어머님, 이제 덮어 나의 봅니다. 않은 이름을
+          별이 까닭입니다. 무성할 내 헤는 까닭입니다. 경, 노새, 가을 당신은 시와
+          새겨지는 추억과 헤일 멀리 버리었습니다. 아침이 이제 별을 이름을 가난한
+          이름과, 헤일 했던 거외다. 애기 멀듯이, 북간도에 하늘에는 이국 아름다운
+          경, 이네들은 책상을 듯합니다. 별 때 했던 나는 버리었습니다. 많은
+          별들을 계절이 계십니다. 너무나 내 별 어머님, 걱정도 책상을 위에 차
+          불러 있습니다.
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var btns = $('.tab li')
+      var contents = $('.contents')
+
+      btns.eq(0).addClass('active')
+      contents.hide().eq(0).show()
+
+      btns.click(function () {
+        btns.removeClass('active')
+        $(this).addClass('active')
+
+        contents.hide()
+        contents.eq($(this).index().show())
+      })
+    </script>
+  </body>
+</html>
