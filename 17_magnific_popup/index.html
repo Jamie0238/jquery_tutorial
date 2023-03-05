@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>magnific popup</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./lib/magnific-popup.css" />
+    <script src="./lib/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>magnific popup</h2>
+
+      <div class="main">
+        <div class="btns">
+          <a class="popup-modal" href="#test-modal">open modal</a>
+          <a
+            class="popup-youtube"
+            href="https://www.youtube.com/watch?v=dG3icr_4ytA"
+            >open youtube</a
+          >
+          <a class="simple-ajax-popup" href="./ajax.html">load ajax</a>
+        </div>
+
+        <p>single image lightbox</p>
+        <div class="single">
+          <a
+            class="image-popup-vertical-fit"
+            href="../images/img_01_b.jpg"
+            title="안녕하세요"
+          >
+            <img src="../images/img_01.jpg" alt="" />
+          </a>
+
+          <a
+            class="image-popup-fit-width"
+            href="../images/img_02_b.jpg"
+            title="안녕하세요"
+          >
+            <img src="../images/img_02.jpg" alt="" />
+          </a>
+
+          <a class="image-popup-no-margins" href="../images/img_03_b.jpg">
+            <img src="../images/img_03.jpg" alt="" />
+          </a>
+        </div>
+
+        <p>lightbox gallery</p>
+        <div class="gallery">
+          <img src="./images/imag_01.jpg" alt="" />
+          <img src="./images/imag_02.jpg" alt="" />
+          <img src="./images/imag_03.jpg" alt="" />
+          <img src="./images/imag_04.jpg" alt="" />
+          <img src="./images/imag_05.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="modal mfp-hide white-popup-block" id="test-modal">
+        <h2>modal</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+          exercitationem ipsum sunt rem autem officiis adipisci at incidunt
+          deserunt placeat natus eaque eveniet repudiandae, ratione, voluptates
+          ex expedita odit est?
+        </p>
+        <a href="#x" class="popup-modal-dismiss">close</a>
+      </div>
+    </div>
+  </body>
+</html>
