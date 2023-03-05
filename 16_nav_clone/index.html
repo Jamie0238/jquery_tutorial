@@ -85,12 +85,12 @@
     </div>
     <script>
       var headerClone = $('header').contents().clone()
-      var header2 = $('<header class = "header2"></header>')
+      var header2 = $('<header class="header2"></header>')
 
       header2.append(headerClone)
       header2.prependTo('.main')
 
-      var scrollValue = $('.header').outerHeight() + 100
+      var scrollValue = $('header').outerHeight() + 100
 
       $(window).scroll(function () {
         if ($(this).scrollTop() > scrollValue) {
